@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        h1,
+        h2 {
+            font-family: dynapuff;
+        }
+
+        form {
+            background-color: rgb(253, 221, 161);
+            margin-left: 20px;
+            padding: 15px;
+        }
+
+        label {
+            font-style: italic;
+        }
+
+        pre {
+            color: gray;
+        }
+
+        input[type=text] {
+            width: 100px
+        }
+
+        input[type=password] {
+            width: 20px
+        }
+
+        button,
+        input[type=submit],
+        input[type=button] {
+            padding: 8px;
+            border-radius: 10px;
+        }
+    </style>
+    <script> /*JavaScript */
+        function minuFunktsioon() {
+            alert("Olen JavaScripti funktsioon ja minu ülesanne on andmete valideerimine!");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>HTML vorm</h1>
+    <h2>Eesti inimeste küsitlus</h2>
+    <form> <!--Teksti sisestus-->
+        <label>Eesnimi:</label>
+        <input type="text" name="enimi"><br>
+        <label>Perekonnanimi:</label>
+        <input type="text" name="pnimi" placeholder="Sisesta siia oma täielik perekonnanimi" autofocus required
+            style="width: 250px;"><br><br>
+        <!--autofocus  - lehe laadimisel on väli fookuses, required ehk kohustuslik väljatäitmineon ka pandud-->
+        <!--Raadionupp -->
+        <label>Sugu</label><br>
+        <input type="radio" name="gender" value="mees" checked>Mees<br>
+        <input type="radio" name="gender" value="naine">Naine<br>
+        <input type="radio" name="gender" value="muu">Ei soovi avaldada<br>
+
+        <!--Pikk tekst, text area -->
+        <label>Haridus</label><br>
+        <textarea name="education" rows="5" cols="20"
+            placeholder="Sosesta siia oma teadmised ja oskused"></textarea><br>
+
+        <!--Rippmenüü-->
+        <label>Vanusegrupp</label><br>
+        <select name="age">
+            <option value="20">&lt;30</option>
+            <option value="30">30-39</option>
+            <option value="40">40-49</option>
+            <option value="50">50-59</option>
+            <option value="60">&gt;=60</option>
+        </select><br>
+
+        <!--Checkbox egk märkeruudud, mitu valikut-->
+        <label>Keeleoskus:</label><br>
+        <input type="checkbox" name="language" value="eng">inglise keel<br>
+        <input type="checkbox" name="language" value="rus">vene keel<br>
+        <input type="checkbox" name="language" value="ger">saksa keel<br>
+        <input type="checkbox" name="language" value="es">hispaania keel<br>
+
+        <!-- Arvude sisestamine, kui samm on 1, pole stepi vaja-->
+        <label>Sisesta enda pikkus (cm):</label>
+        <input type="number" min="70" max="250" step="1"><br>
+
+        <!-- Kuupäeva sisestamine-->
+        <label>Sisesta sünnipäev:</label>
+        <input type="date" min="1955-12-31"><br>
+
+        <!--Värvi valimine-->
+        <label>Vali enda lemmikvärv:</label>
+        <input type="color"><br>
+
+        <!--Parooli sisestamine-->
+        <label>Sisesta PIN-kood:</label>
+        <input type="password" maxlength="4" required><br><br>
+
+        <!--Skaala ehk range , pre ütleb, et jääb sellisele kujule, nagu koodis pandud ja font samamoodi-->
+        <label>Kas sa oled õnnelik?</label><br>
+        <input type="range" min="1" max="5" value="1"><br>
+        <pre style="margin-top: -6px;">1    2   3   4   5</pre>
+
+        <br>
+        <br>
+        <!-- Nupud - button märgendiga-->
+        <button type="reset">Tühjenda väljad</button>
+        <button onclick="minuFunktsioon()">Andmete valideerimine</button>
+
+        <br>
+        <br>
+
+        <!--Nupud lõpus-->
+        <input type="button" value="Lihtsalt nupp">
+        <input type="submit" value="Saada" onclick="alert('Andmed vastuvõetud!');">
+
+
+
+
+    </form>
+</body>
+
+</html>

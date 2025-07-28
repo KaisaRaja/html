@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toidukorv</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: dynapuff;
+        }
+
+        table {
+            background-color: bisque;
+            border: solid black 1px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: solid gray 1px;
+            padding: 5px;
+        }
+
+        th {
+            background-color: beige;
+        }
+
+        tr {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        td:nth-child(4) {
+            text-align: right;
+        }
+
+        td:nth-child(5) {
+            text-align: center;
+        }
+
+        #tähtis {
+            background-color: chocolate;
+        }
+
+        caption {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Arendaja toidukorv</h1>
+    <table>
+        <caption>Meie lemmikud 2025</caption> <!-- jäta tabeli sisse ja kasutatakse tabeli pealkirjana 
+        või pildi allkkirjana, siis on ilusasti keskel, kui on tabeli vormingu sees-->
+        <tr>
+            <th>Jrk nr</th>
+            <th>Nimetus</th>
+            <th>Ühik</th>
+            <th>Ühiku hind</th>
+            <th>Kogus</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Piim</td>
+            <td>pakk</td>
+            <td>0.59</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Banaan</td>
+            <td>kg</td>
+            <td>1.29</td>
+            <td>1.05</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Pähklid</td>
+            <td>pakk</td>
+            <td>3.79</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Kohv
+                <ul>
+                    <li>Lavazza</li>
+                    <li>Kulta Katrina</li>
+                </ul>
+            </td>
+            <td>pakk</td>
+            <td>9.99</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td id="tähtis">Šokolaad</td>
+            <td>tahvel</td>
+            <td>3.99</td>
+            <td>2</td>
+        </tr>
+
+    </table>
+
+    <!-- Lisa siia w3schools logo. Logole vajutades avaneb w3 schools leht-->
+    <a href="https://www.w3schools.com/">
+        <img src="images/w3.jpg" alt="w3sCHOOLS" width="200">
+    </a>
+
+
+</body>
+
+</html>
