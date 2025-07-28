@@ -19,3 +19,4 @@ Projekt on loodud õppimise ja harjutamise eesmärgil. Koodinäited ei ole mõel
 ## 👩‍💻 Autor
 
 **Kaisa Raja**  
+*Naised veebiarendajaks – 2025*
